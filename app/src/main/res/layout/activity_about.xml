@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.AboutActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingBottom="@dimen/activity_40dp">
+
+        <ImageView
+            android:id="@+id/logo_about"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/logo_v" />
+
+        <TextView
+            android:id="@+id/text_about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo_about"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingBottom="@dimen/activity_4dp"
+            android:paddingTop="@dimen/activity_4dp"
+            android:text="version"
+            android:textColor="@color/text_color_soft_gray"
+            android:textSize="@dimen/text_size_20sp" />
+
+        <TextView
+            android:id="@+id/text_about_develop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_about"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Powered By Insurance Team , 2018"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_12sp" />
+
+    </RelativeLayout>
+</RelativeLayout>

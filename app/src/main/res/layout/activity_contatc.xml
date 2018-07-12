@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ContatcActivity">
+
+    <LinearLayout
+        android:id="@+id/categorychat1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingRight="@dimen/text_size_14sp"
+        android:paddingLeft="@dimen/text_size_14sp"
+        android:paddingTop="@dimen/text_size_14sp"
+        android:paddingBottom="@dimen/text_size_14sp">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:gravity="center_vertical">
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/text_size_14sp"
+                android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/konsultasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textStyle="bold"
+                    android:ellipsize="end"
+                    android:textColor="@color/colorText3"
+                    android:text="Phonebook"/>
+
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/ic_contacts_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12sdp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_below="@+id/categorychat1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrey2"/>
+    <LinearLayout
+        android:layout_below="@+id/categorychat1"
+        android:id="@+id/categorychat2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingRight="@dimen/text_size_14sp"
+        android:paddingLeft="@dimen/text_size_14sp"
+        android:paddingTop="@dimen/text_size_14sp"
+        android:paddingBottom="@dimen/text_size_14sp">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:gravity="center_vertical">
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/text_size_14sp"
+                android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/konsultasi2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textStyle="bold"
+                    android:ellipsize="end"
+                    android:textColor="@color/colorText3"
+                    android:text="Tambah"/>
+
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/ic_account_box_black_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12sdp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_below="@+id/categorychat2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrey2"/>
+</RelativeLayout>

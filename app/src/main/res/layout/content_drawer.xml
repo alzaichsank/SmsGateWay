@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".view.DrawerActivity"
+    tools:showIn="@layout/app_bar_drawer">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingBottom="@dimen/activity_10dp">
+
+        <ImageView
+            android:id="@+id/logo_about"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/logo_v" />
+
+        <TextView
+            android:id="@+id/text_about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo_about"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingBottom="@dimen/activity_4dp"
+            android:paddingTop="@dimen/activity_4dp"
+            android:text="Created By Insurance Team 2018"
+            android:textColor="@color/text_color_soft_gray"
+            android:textSize="@dimen/text_size_18sp" />
+        <TextView
+            android:id="@+id/text_creator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_about"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingBottom="@dimen/activity_4dp"
+            android:paddingTop="@dimen/activity_4dp"
+            android:text="Alza Ichsan Kurniawan \n Annisa Larasati \n Deni Mardiana \n Hasan El Jabir"
+            android:textColor="@color/text_color_soft_gray"
+            android:textSize="@dimen/text_size_18sp" />
+        <TextView
+            android:id="@+id/text_about_develop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_creator"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="Powered By Zenziva"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_14sp" />
+        <TextView
+            android:id="@+id/text_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_about_develop"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Visit : http://zenziva.id/"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_12sp" />
+
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

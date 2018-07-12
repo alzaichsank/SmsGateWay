@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/ic_contacts_24dp"
+            android:title="Contact" />
+        <item
+            android:id="@+id/nav_send"
+            android:icon="@drawable/ic_message_black_24dp"
+            android:title="Message" />
+        <!--<item-->
+            <!--android:id="@+id/nav_group"-->
+            <!--android:icon="@drawable/ic_group_black_24dp"-->
+            <!--android:title="Group" />-->
+
+    </group>
+    <item android:title="Transaction">
+        <menu>
+            <!--<item-->
+                <!--android:id="@+id/nav_inbox"-->
+                <!--android:icon="@drawable/ic_inbox_black_24dp"-->
+                <!--android:title="Share" />-->
+            <item
+                android:id="@+id/nav_outbox"
+                android:icon="@drawable/ic_call_made_black_24dp"
+                android:title="Outbox" />
+        </menu>
+    </item>
+
+    <item android:title="Other">
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_info_outline_black_24dp"
+                android:title="About" />
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/ic_help_outline_black_24dp"
+                android:title="Help" />
+        </menu>
+    </item>
+
+</menu>

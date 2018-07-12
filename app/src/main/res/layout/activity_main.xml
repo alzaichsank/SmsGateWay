@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:id="@+id/fromMessage"
+    android:background="@color/softgrey"
+    android:nestedScrollingEnabled="true"
+    tools:context="com.example.alzaichsank.smsgateway.view.MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/text_size_16sp"
+            >
+            <ImageView
+                android:id="@+id/ivLogo"
+                android:layout_width="175dp"
+                android:layout_height="95dp"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_gravity="center"
+                android:background="@drawable/logo_v"/>
+            <!--username-->
+            <TextView
+                android:id="@+id/titleUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nohp"
+                android:textColor="@color/colorText2"
+                android:textSize="@dimen/text_size_16sp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textColor="@color/text_black" />
+                <EditText
+                    android:maxLength="14"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/nohpTxt"
+                    android:background="@drawable/shape_input_background"
+                    android:layout_marginBottom="@dimen/text_size_10sp"
+                    android:layout_marginTop="@dimen/text_size_16sp"
+                    android:textColor="@color/text_black"
+                    android:inputType="number"
+                    android:textSize="@dimen/text_size_16sp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btnAddSendto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="@dimen/text_size_14sp"
+                    android:background="@drawable/bg_login_button"
+                    android:text="Add"
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:layout_marginBottom="@dimen/text_size_10sp"/>
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btnAddAllFromDb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/text_size_14sp"
+                    android:background="@drawable/bg_login_button"
+                    android:text="Add All"
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:layout_marginBottom="@dimen/text_size_10sp"/>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btnAddClearAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/text_size_14sp"
+                    android:background="@drawable/bg_login_button"
+                    android:text="Clear"
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:layout_marginBottom="@dimen/text_size_10sp"/>
+
+            </LinearLayout>
+
+
+
+            <!--message-->
+            <TextView
+                android:id="@+id/titlelist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Send to : "
+                android:textColor="@color/colorText2"
+                android:textSize="@dimen/text_size_16sp"
+                android:layout_marginBottom="@dimen/text_size_10sp"
+                android:layout_marginTop="@dimen/text_size_16sp"/>
+
+            <TextView
+                android:id="@+id/sendTo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:background="@color/text_white"
+                android:textColor="@color/colorText2"
+                android:textSize="@dimen/text_size_16sp"
+                android:layout_marginBottom="@dimen/text_size_10sp"
+               />
+
+            <!--message-->
+            <TextView
+                android:id="@+id/titlePwe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/message"
+                android:textColor="@color/colorText2"
+                android:textSize="@dimen/text_size_16sp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/messageTxt"
+                    android:background="@drawable/shape_input_background"
+                    android:layout_marginBottom="@dimen/text_size_14sp"
+                    android:layout_marginTop="@dimen/text_size_14sp"
+                    android:maxLines="3"
+                    android:minLines="3"
+                    android:gravity="top"
+                    android:overScrollMode="always"
+                    android:scrollHorizontally="false"
+                    android:scrollbarAlwaysDrawVerticalTrack="true"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/text_black"
+                    android:inputType="textMultiLine"
+                    android:textSize="@dimen/text_size_16sp"
+                    />
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_size_14sp"
+                android:background="@drawable/bg_login_button"
+                android:text="@string/submit"
+                android:textAllCaps="true"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_size_14sp" />
+            <ListView
+                android:id="@+id/listContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorText2"
+                android:background="@color/text_white"
+                android:textSize="@dimen/text_size_16sp"
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"
+                android:layout_marginBottom="@dimen/text_size_10sp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

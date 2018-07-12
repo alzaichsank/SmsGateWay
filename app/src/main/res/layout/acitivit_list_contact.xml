@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/listContactLayout"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <ScrollView
+                android:id="@+id/scrollreport"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="4dp"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="6dp">
+                    <android.support.v7.widget.RecyclerView
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                        android:id="@+id/recyclerViewContact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:animationCache="false"
+                        android:clipToPadding="false"
+                        android:scrollbars="vertical"
+                        android:scrollingCache="false"
+                        android:smoothScrollbar="true" />
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_marginBottom="5dp"
+                        android:id="@+id/showmorereport"
+                        android:layout_below="@+id/report_rv_item_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Reload"
+                        android:background="@color/text_white"
+                        android:textStyle="bold"
+                        android:padding="@dimen/activity_16dp"
+                        android:layout_marginTop="4dp"
+                        android:textSize="@dimen/text_size_14sp"/>
+                    <ProgressBar
+                        android:visibility="gone"
+                        android:id="@+id/progressBarReloadReport"
+                        android:layout_alignParentBottom="true"
+                        android:paddingBottom="@dimen/activity_16dp"
+                        android:layout_below="@+id/showmorereport"
+                        android:layout_width="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

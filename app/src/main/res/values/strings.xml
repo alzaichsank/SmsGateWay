@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">SmsGateWay</string>
+
+    <string name="nohp">No handphone</string>
+
+    <string name="message">Message</string>
+
+    <string name="submit">Send</string>
+
+
+    <string name="progress_loading">Please Wait...</string>
+    <string name="title_activity_drawer">DrawerActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Sms Gateway</string>
+    <string name="nav_header_subtitle">Insurance Team Sms Gateway</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_clear">Log Out</string>
+    <!--for parsing-->
+    <string name="extraid">extraid</string>
+    <string name="extraname">extraname</string>
+    <string name="extranotelpone">extranotelpone</string>
+    <!--help-->
+    <string name="help1">
+        Bagaimana cara untuk mengirim sms?
+    </string>
+    <string name="answer1">
+        setelah login, pilih menu MESSAGE \n
+        1. Masukan nomer tujuan di kolom "No handphone", klik Add \n
+        2. Nomer yang telah ditambahkan akan muncul di kolom "Send to :" \n
+        3. Nomer tujuan  dapat ditambah lebih dari satu. \n
+        4. Ketikan pesan yang ingin dibroadcast pada kolom "Message" \n
+        5. Klik Send untung mengirim pesan. \n
+        6. Cek status pengiriman pada https://regular.zenziva.net/apps/outbox.php
+    </string>
+    <string name="help2">
+        Bagaimana cara melihat nomer kontak yang tersedia?
+    </string>
+    <string name="answer2">
+        Pilih menu Contact, menu tersebut berisi list nomer kontak yang tersedia untuk di broadcast
+    </string>
+    <string name="info1">
+        * Server Online 24Hours / day
+    </string>
+
+</resources>

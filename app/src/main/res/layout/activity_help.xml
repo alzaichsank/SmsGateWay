@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="50dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:id="@+id/logo_about"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/logo_v" />
+            <LinearLayout
+                android:layout_below="@+id/logo_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/help1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/header"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="3dp">
+
+                    <ImageView
+                        android:id="@+id/a1"
+                        android:src="@drawable/expand_up_w"
+                        android:layout_width="50dp"
+                        android:layout_height="35dp"
+                        android:gravity="start"
+                        android:padding="@dimen/activity_4dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="6dp"
+                        android:padding="@dimen/activity_4dp"
+                        android:text="@string/help1"
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/text_size_14sp"
+                        android:textStyle="normal|bold" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="35dp"
+                        android:gravity="end"
+                        android:padding="@dimen/activity_4dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:src="@drawable/help"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/answer1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="2dp"
+                    android:visibility="gone"
+                    android:background="@color/text_color_soft_gray">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/activity_6dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="@string/answer1"
+                        android:gravity="left"
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/text_size_14sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/help2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/header"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="3dp">
+
+                    <ImageView
+                        android:id="@+id/a2"
+                        android:src="@drawable/expand_up_w"
+                        android:layout_width="50dp"
+                        android:layout_height="35dp"
+                        android:gravity="start"
+                        android:padding="@dimen/activity_4dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="6dp"
+                        android:padding="@dimen/activity_4dp"
+                        android:text="@string/help2"
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/text_size_14sp"
+                        android:textStyle="normal|bold" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="35dp"
+                        android:gravity="end"
+                        android:padding="@dimen/activity_4dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:src="@drawable/help"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/answer2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="2dp"
+                    android:visibility="gone"
+                    android:background="@color/text_color_soft_gray">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/activity_6dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="@string/answer2"
+                        android:gravity="left"
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/text_size_14sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:paddingLeft="6dp"
+        android:text="Powered By Insurance Team , 2018"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/text_size_12sp" />
+</RelativeLayout>

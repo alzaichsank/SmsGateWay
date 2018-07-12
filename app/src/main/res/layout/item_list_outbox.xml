@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:id="@+id/listContacts"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/layoutAdapterUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageUser"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/ic_mail_black_24dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="false"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imageUser">
+
+
+
+                <TextView
+                    android:id="@+id/textNohp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textNameUser"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:paddingRight="10dp"
+                    android:maxLines="1"
+                    android:maxLength="30"
+                    android:ellipsize="end"
+                    android:text="no handphone"
+                    android:textColor="@color/colorText2"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <TextView
+                    android:id="@+id/textNameUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:ellipsize="end"
+                    android:text="Name"
+                    android:textColor="@color/colorText3"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/textDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginLeft="16dp"
+                    android:ellipsize="end"
+                    android:text="2018-09-09 10:10:10"
+                    android:textStyle="italic"
+                    android:layout_below="@+id/textNohp"
+                    android:textColor="@color/colorText3"
+                    android:textSize="@dimen/text_size_12sp"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/layoutAdapterUser"
+            android:background="@color/colorGrey2" />
+</RelativeLayout>
